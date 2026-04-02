@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackpoint Security | Executive Offensive Security</title>
+  <meta
+    name="description"
+    content="Premium Penetration Testing, Red Teaming und technische Sicherheitsbewertungen für Unternehmen mit globaler Angriffsfläche."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="bgMatrix" class="bg-matrix" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark"></span>
+      <span class="brand-copy">
+        <strong>Blackpoint</strong>
+        <span>Offensive Security</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#system">System</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav-cta">Assessment anfragen</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Penetration Testing · Red Teaming · Cloud, Web, Identity & Infrastructure</p>
+        <h1>Wir visualisieren Ihre Angriffsfläche so, wie echte Gegner sie sehen.</h1>
+        <p class="hero-text">
+          Premium Offensive Security für Unternehmen, die mehr brauchen als Standard-Scans und generische Reports.
+          Wir prüfen Webanwendungen, APIs, Cloud-Umgebungen, interne Netze und Identitäten aus echter
+          Angreiferperspektive und liefern belastbare Ergebnisse für Security-Teams, IT und Management.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="button button-primary">Assessment anfragen</a>
+          <a href="#services" class="button button-secondary">Leistungsumfang ansehen</a>
+        </div>
+
+        <div class="hero-panels">
+          <article>
+            <strong>Globale Angriffsfläche</strong>
+            <span>Externe Systeme, Cloud-Ressourcen, Identitäten und interne Verbindungen werden als zusammenhängendes Risiko sichtbar.</span>
+          </article>
+          <article>
+            <strong>Manuelle Tiefe</strong>
+            <span>Kein oberflächlicher Tool-Output, sondern belastbare Angriffspfade, reproduzierbare Nachweise und klare Priorisierung.</span>
+          </article>
+          <article>
+            <strong>Executive Readiness</strong>
+            <span>Technische Tiefe für Fachteams, präzise Kommunikation für Entscheider, Compliance und Budgetverantwortliche.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="quantum-stage">
+          <canvas id="globeCanvas" class="globe-canvas"></canvas>
+
+          <div class="stage-fog"></div>
+          <div class="stage-floor"></div>
+          <div class="scan-beam scan-beam-a"></div>
+          <div class="scan-beam scan-beam-b"></div>
+          <div class="center-scan"></div>
+
+          <div class="poly cube cube-a">
+            <span class="face front"></span>
+            <span class="face back"></span>
+            <span class="face left"></span>
+            <span class="face right"></span>
+            <span class="face top"></span>
+            <span class="face bottom"></span>
+          </div>
+
+          <div class="poly cube cube-b">
+            <span class="face front"></span>
+            <span class="face back"></span>
+            <span class="face left"></span>
+            <span class="face right"></span>
+            <span class="face top"></span>
+            <span class="face bottom"></span>
+          </div>
+
+          <div class="poly prism prism-a">
+            <span class="pane p1"></span>
+            <span class="pane p2"></span>
+            <span class="pane p3"></span>
+          </div>
+
+          <div class="orbital orbital-a"></div>
+          <div class="orbital orbital-b"></div>
+          <div class="orbital orbital-c"></div>
+
+          <div class="glass-panel glass-panel-main">
+            <span class="kicker">GLOBAL THREAT SURFACE</span>
+            <strong>Kontinente, Infrastruktur-Hubs und Datenpfade in einem einzigen Lagebild</strong>
+            <p>Die Globe zeigt aktivitätsstarke Regionen, operative Verbindungen und sichtbare Ein- und Austrittspunkte über internationale Infrastruktur.</p>
+          </div>
+
+          <div class="glass-panel glass-panel-side">
+            <span class="kicker">OFFENSIVE ANALYSIS</span>
+            <strong>Angriffsketten statt isolierter Schwachstellen</strong>
+            <p>Wir betrachten Risiken nicht als einzelne Findings, sondern als kombinierbare Wege zu Zugriff, Ausweitung und Wirkung.</p>
+          </div>
+
+          <div class="glass-panel glass-panel-bottom">
+            <span class="kicker">ENTERPRISE POSITIONING</span>
+            <strong>Technisch kompromisslos. Geschäftlich klar kommuniziert.</strong>
+            <p>Ideal für Firmen, die einen hochklassigen Partner für Penetration Tests, Red Teaming und Security Reviews suchen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-band" data-reveal>
+      <p>Für Unternehmen mit kritischen Anwendungen, Kundendaten, APIs, Cloud-Workloads, internen Plattformen und erhöhtem Risikodruck.</p>
+      <div class="trust-items">
+        <span>Web Apps</span>
+        <span>API Security</span>
+        <span>Cloud</span>
+        <span>Identity</span>
+        <span>Internal</span>
+        <span>Red Team</span>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Services</p>
+        <h2>Offensive Security für moderne Unternehmenslandschaften</h2>
+        <p>
+          Unser Fokus liegt auf realen Angriffswegen: Wie gelangt ein Angreifer in Ihre Umgebung,
+          wie bewegt er sich weiter, welche Schwächen lassen sich kombinieren und welche Maßnahmen
+          reduzieren das Risiko tatsächlich.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" data-reveal>
+          <span>01</span>
+          <h3>Web Application Pentest</h3>
+          <p>Prüfung von Geschäftslogik, Authentifizierung, Rollenmodellen, Session-Flows, APIs und sensiblen Datenpfaden.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>02</span>
+          <h3>External Infrastructure</h3>
+          <p>Analyse des Perimeters inklusive DNS, VPN, Mail, Zertifikate, exposed Services und verwertbarer Fehlkonfigurationen.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>03</span>
+          <h3>Identity & Internal</h3>
+          <p>Bewertung von Active Directory, Privilege Escalation, Trust Abuse, Lateral Movement und internen Angriffsketten.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span>04</span>
+          <h3>Cloud & Red Teaming</h3>
+          <p>Technische Sicherheitsbewertungen für AWS, Azure und hybride Umgebungen sowie realistische Angriffssimulationen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section system" id="system">
+      <div class="system-panel" data-reveal>
+        <div>
+          <p class="eyebrow">System</p>
+          <h2>Die Welt ist nicht mehr nur dekorativ. Sie erzählt Infrastruktur, Regionen und Signalwege.</h2>
+        </div>
+        <p>
+          Die Globe zeigt stärker angedeutete Kontinent-Silhouetten, regionale Aktivitätsfelder und
+          animierte Verbindungen zwischen operativen Hubs. Dadurch entsteht nicht nur Tiefe, sondern
+          ein glaubwürdiges Lagebild für globale Cyber-Risiken.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal>
+          <span>Regions</span>
+          <h3>Kontinente lesbar</h3>
+          <p>Europa, Nordamerika, Südamerika, Afrika, Asien und Ozeanien sind auf der Globe klarer angedeutet.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span>Traffic</span>
+          <h3>Ein- und Ausgänge sichtbar</h3>
+          <p>Leuchtende Impulse wandern zwischen Hubs und machen Infrastrukturbewegungen visuell nachvollziehbar.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span>Impact</span>
+          <h3>Mehr operative Wirkung</h3>
+          <p>Die Seite fühlt sich wie ein globales Security-Operations-Interface an statt wie eine normale Landingpage.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Process</p>
+        <h2>Vom Scope bis zum Retest klar, belastbar und auf Wirkung ausgerichtet</h2>
+      </div>
+
+      <div class="timeline">
+        <article data-reveal>
+          <strong>01. Scoping</strong>
+          <p>Präzise Definition von Zielsystemen, Zeitfenstern, Ansprechpartnern und Rules of Engagement.</p>
+        </article>
+        <article data-reveal>
+          <strong>02. Attack Modeling</strong>
+          <p>Aufbau realistischer Angriffshypothesen und Priorisierung nach Wirkung, Ausnutzbarkeit und Risikokette.</p>
+        </article>
+        <article data-reveal>
+          <strong>03. Manual Offensive Testing</strong>
+          <p>Technisch tiefe manuelle Prüfung mit Fokus auf belastbaren Nachweisen und realer Sicherheitsrelevanz.</p>
+        </article>
+        <article data-reveal>
+          <strong>04. Reporting & Retest</strong>
+          <p>Executive Summary, technische Reproduktion, Maßnahmenempfehlungen und Nachprüfung in einem sauberen Prozess.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy" data-reveal>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Fordern Sie ein Premium Security Assessment für Ihr Unternehmen an.</h2>
+        <p>
+          Die Seite bleibt für GitHub Pages statisch. Das Formular kann weiterhin an Formspree,
+          Getform oder einen eigenen Endpoint angeschlossen werden.
+        </p>
+        <div class="contact-tags">
+          <span>NDA-ready</span>
+          <span>GitHub Pages</span>
+          <span>Fast response</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal>
+        <label>
+          Unternehmen
+          <input type="text" name="company" placeholder="Beispiel GmbH" required>
+        </label>
+        <label>
+          Ansprechpartner
+          <input type="text" name="name" placeholder="Max Mustermann" required>
+        </label>
+        <label>
+          E-Mail
+          <input type="email" name="email" placeholder="security@firma.de" required>
+        </label>
+        <label>
+          Service
+          <select name="service" required>
+            <option value="">Bitte auswählen</option>
+            <option>Web Application Pentest</option>
+            <option>External Infrastructure Assessment</option>
+            <option>Identity / Internal Review</option>
+            <option>Cloud Security Assessment</option>
+            <option>Red Team Exercise</option>
+          </select>
+        </label>
+        <label class="full-width">
+          Projektbeschreibung
+          <textarea name="message" rows="5" placeholder="Welche Systeme oder Ziele sollen geprüft werden?" required></textarea>
+        </label>
+        <div class="form-footer">
+          <button class="button button-primary" type="submit">Assessment senden</button>
+          <p id="formStatus" role="status" aria-live="polite">
+            Formularziel in site.config.js hinterlegen oder Mail-Fallback nutzen.
+          </p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Blackpoint Offensive Security · Globale Angriffsflächen sichtbar gemacht · Technisch tief, klar kommuniziert.</p>
+  </footer>
+
+  <script src="site.config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
